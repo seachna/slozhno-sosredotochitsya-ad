@@ -1,20 +1,23 @@
-.theme-dark:root {
-	--text-button: #ff0070;
-	--border-button: 255, 0, 112;
-
-	--text-masthead: #db00ff;
-	--shadow-masthead: #ff0070;
-
-	--text-accent: #ff0070;
-	--text-primary: #000028;
-	--text-secondary: #f1b2ce;
-
-	--bg-accent: #ff0070;
-	--bg-primary: #000028;
-
-	--bg-hero-image: url('../images/cover-image-dark.png');
+:root.theme-dark {
+  --bg-color: #000028;
+  --title-decor-color: #000028;
+  --content__section-title-color: rgb(255 0 112);
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: rgb(255 0 112);
+  --title-color: #db00ff;
+  --main-font-color: #f1b2ce;
+  --hover-border-color: rgb(255 0 112 / 0.4);
+  --decor-color: rgb(255 0 112);
+  --button-color: rgb(255 0 112);
 }
 
-.theme-dark .header__decoration {
-	display: block;
+@media (prefers-color-scheme: dark) {
+  
+  .header__decorative-inscription {
+    display: block;
+  }
+}
+
+.theme-dark .header__decorative-inscription {
+  display: block;
 }

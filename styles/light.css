@@ -1,43 +1,37 @@
 :root.theme-light {
-  --text-button: #353430;
-  --border-button: 53, 52, 48;
-
-  --text-masthead: #ffc2e6;
-  --shadow-masthead: #ff8dcb;
-
-  --text-accent: #353430;
-  --text-primary: #353430;
-  --text-secondary: #353430;
-
-  --bg-accent: #ff8dcb;
-  --bg-primary: #fff1f7;
-
-  --bg-hero-image: url("../images/cover-image-light.png");
-}
-
-.theme-light .header__decoration {
-  display: none;
+  --bg-color: #fff1f7;
+  --title-decor-color: #353430;
+  --content__section-title-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --main-font-color: #353430;
+  --hover-border-color: rgba(50 49 45/ 0.4);
+  --button-color: #353430;
+  --decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
-  .header__decoration {
+  
+  :root {
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --title-decor-color: #353430;
+    --content__section-title-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --main-font-color: #353430;
+    --decor-color: #353430;
+    --hover-border-color: rgba(50 49 45/ 0.4);
+    --button-color: #353430;
+
+  }
+
+  .header__decorative-inscription {
     display: none;
   }
+}
 
-  :root {
-    --text-button: #353430;
-    --border-button: 53, 52, 48;
-
-    --text-masthead: #ffc2e6;
-    --shadow-masthead: #ff8dcb;
-
-    --text-accent: #353430;
-    --text-primary: #353430;
-    --text-secondary: #353430;
-
-    --bg-accent: #ff8dcb;
-    --bg-primary: #fff1f7;
-
-    --bg-hero-image: url("../images/cover-image-light.png");
-  }
+.theme-light .header__decorative-inscription {
+  display: none;
 }
